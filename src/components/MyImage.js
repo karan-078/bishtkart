@@ -4,7 +4,6 @@ const MyImage = ({ imgs = [{ index
     : "" }] }) => {
   const [mainImage, setMainImage] = useState(imgs[1]);
 
-  console.log(imgs)
   return (
     <>
       <div className="flex items-center justify-center flex-col-reverse gap-4 md:flex-row">

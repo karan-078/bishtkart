@@ -166,12 +166,12 @@ const SinglProduct = ( ) => {
                       className="text-black p-2 bg"
                       onClick={() => decreaseQty()}
                     >
-                      -
+                      <AiOutlineMinus/>
                     </button>
 
                     <div>{quantity}</div>
                     <button type="button bg-red" onClick={() => increaseQty()}>
-                      +
+                      <AiOutlinePlus/>
                     </button>
                   </div>
 
@@ -182,19 +182,19 @@ const SinglProduct = ( ) => {
               <div className="btns flex gap-4 mb-2 text-[#fff] flex-col   md:flex-row md:gap-6">
                 <button
                   type="button"
-                  className=" bg-[#ff9f00] pt-2 pb-2 pl-6 pr-6  rounded-sm md:pl-10 md:pr-10"
+                  className=" bg-[#ff9f00] pt-2 pb-2 pl-6 pr-6  rounded-sm md:pl-10 md:pr-10 flex items-center justify-center  "
                   onClick={() => {
                     addToCartHandler(product);
                   }}
                 >
-                  <i></i>
-                  <span className="">add to cart</span>
+                  <i><BsCartPlus/></i>
+                  <span className="pl-4">add to cart</span>
                 </button>
                  
                 <Link to={"/chekoutpage"}>
                 <button
                   type="button"
-                  className=" bg-[#fb641b] pt-2 pb-2 pl-6 pr-6 rounded-sm shadow-lg border-none text[#fff] md:pl-10 md:pr-10"
+                  className=" bg-[#fb641b] w-full pt-2 pb-2 pl-6 pr-6 rounded-sm shadow-lg border-none text[#fff] md:pl-10 md:pr-10"
                 >
                   <span>buy now</span>
 

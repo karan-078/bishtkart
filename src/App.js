@@ -2,7 +2,7 @@ import React, { Children } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
-
+ import ErrorPage from "./page/ErrorPage";
 import {
   Home,
   Cart,
@@ -57,6 +57,11 @@ const router = createBrowserRouter([
       {
         path:"/chekoutpage",
         element:<ChekoutPage />
+      },
+
+      {
+        path:"*",
+        element:<ErrorPage/>
       },
     ],
   },

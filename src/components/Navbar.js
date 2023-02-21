@@ -42,7 +42,7 @@ const Navbar = () => {
           </button>
 
           <Link to={"/"} className=" rounded-xl font-semibold text-2xl ">
-            Bishtkart
+            Bishtk@rt
           </Link>
         </div>
 

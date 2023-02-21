@@ -32,7 +32,7 @@ const HeroChekout = () => {
           )
       })}
        <div className="mt-10 flex ">
-         <span className="text-lg font-semibold"> your total is : {formatPrice(totalAmount)}</span>
+         <span className="text-lg font-semibold"> Your toal is : {formatPrice(totalAmount)}</span>
          </div>
     </div>
   )
